@@ -303,18 +303,21 @@ Change the NSX controller password
 
 * **put** *(secured)*: Change the NSX controller password
 
-## servicesScope
-Working with services on a scope
+## servicesApps
+Working with services
 
 ### /2.0/services/application/scope/{scopeId}
+Retrieve Services from a Specific Scope
 
 * **get** *(secured)*: List services that have been created on the scope
+
+### /2.0/services/application/{scopeId}
+Create a Service on a Specific Scope
+
 * **post** *(secured)*: Create a new service on the specified scope
 
-## service
-Working with a specified service
-
 ### /2.0/services/application/{applicationId}
+Working with a specified service
 
 * **get** *(secured)*: Retrieve details about the specified service
 * **put** *(secured)*: Modify the name, description, applicationProtocol, or port value of a
